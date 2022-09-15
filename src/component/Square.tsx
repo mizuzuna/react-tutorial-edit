@@ -13,11 +13,3 @@ const Square: React.FC<SquareProps> = (props) => {
   );
 };
 export default Square;
-
-/*export default function Square(props: SquareProps) {
-  return (
-    <button className="square" onClick={props.onClick}>
-      {props.value}
-    </button>
-  );
-}*/
