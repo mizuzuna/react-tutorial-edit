@@ -1,6 +1,9 @@
 import { Icon } from "../interface";
 
-export default function calculateWinner(squares: Array<Icon>) {
+interface WinnerProps {
+  squares: Array<Icon>;
+}
+const calculateWinner: React.FC<WinnerProps> = (squares) => {
   const lines = [
     [0, 1, 2],
     [3, 4, 5],
@@ -18,4 +21,5 @@ export default function calculateWinner(squares: Array<Icon>) {
     }
   }
   return null;
-}
+};
+export default calculateWinner;
