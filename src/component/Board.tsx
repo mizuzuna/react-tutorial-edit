@@ -7,9 +7,9 @@ interface BoradProps {
   onClick: (event: React.MouseEvent<HTMLInputElement>) => void;
 }
 
-const Board: React.FC<BoradProps> = (props) => {
+const Board: React.FC<BoradProps> = ({ squares, onClick }) => {
   const renderSquare = (i: number) => {
-    return <Square value={props.squares[i]} onClick={() => props.onClick(i)} />;
+    return <Square value={squares[i]} onClick={() => onClick(i)} />;
   };
 
   return (
